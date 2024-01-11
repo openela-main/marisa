@@ -8,7 +8,7 @@
 
 Name:          marisa
 Version:       0.2.4
-Release:       36%{?dist}
+Release:       38%{?dist}
 Summary:       Static and spece-efficient trie data structure library
 
 License:       BSD or LGPLv2+
@@ -222,6 +222,13 @@ rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/sample.pl
 %{ruby_vendorarchdir}/marisa.so
 
 %changelog
+* Thu Apr 20 2023 Parag Nemade <pnemade AT redhat DOT com> - 0.2.4-38
+- Resolves:rh#2180735 - move marisa-devel in rhel8 CRB repository
+  also fix missing gating test execution
+
+* Thu Apr 20 2023 Parag Nemade <pnemade AT redhat DOT com> - 0.2.4-37
+- Resolves:rh#2180735 - move marisa-devel in rhel8 CRB repository
+
 * Wed Aug 01 2018 Takao Fujiwara <fujiwara@redhat.com> - 0.2.4-36
 - disable python2 for RHEL8
 
